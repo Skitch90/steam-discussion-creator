@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory
 
 class TradingForumPage(driver: WebDriver): BasePage(driver) {
     private val logger = LoggerFactory.getLogger(TradingForumPage::class.java)
-    private val simulationEnabled = System.getProperty("simulation.enable", "false").toBoolean()
+
     @FindBy(css = ".apphub_AppName")
     private val appName: WebElement? = null
     @FindBy(css = ".forum_topic:not(.locked)")
@@ -24,7 +24,6 @@ class TradingForumPage(driver: WebDriver): BasePage(driver) {
 
     fun navigate(appID: String) {
         navigateTo("https://steamcommunity.com/app/$appID/tradingforum/")
-
     }
 
     fun getAppName(): String {
@@ -50,8 +49,8 @@ class TradingForumPage(driver: WebDriver): BasePage(driver) {
         textArea!!.sendKeys(text)
     }
 
-    fun createDiscussion() {
-        if (!simulationEnabled) {
+    fun createDiscussion(simulation: Boolean) {
+        if (!simulation) {
             clickElement(createDiscussionButton!!)
             logger.info("Discussion created for game \"{}\"", getAppName())
         } else {

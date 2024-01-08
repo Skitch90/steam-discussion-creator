@@ -47,7 +47,7 @@ object SteamDiscussionCreator {
         tradingForumPage.startDiscussion()
         tradingForumPage.typeTitle(discussion.title)
         tradingForumPage.typeText(discussion.text)
-        tradingForumPage.createDiscussion()
+        tradingForumPage.createDiscussion(discussion.simulation)
     }
 
     private fun configureDriver(): WebDriver {
