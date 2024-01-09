@@ -3,6 +3,8 @@ package it.alesc.steam
 import com.sksamuel.hoplite.ConfigLoader
 import it.alesc.steam.config.Config
 import it.alesc.steam.config.Discussion
+import it.alesc.steam.db.DBUtils.configureDatabase
+import it.alesc.steam.db.DBUtils.trackInsertedPost
 import it.alesc.steam.pages.LoginPage
 import it.alesc.steam.pages.TradingForumPage
 import org.openqa.selenium.WebDriver
@@ -12,10 +14,12 @@ import java.time.Duration
 
 object SteamDiscussionCreator {
     private val logger = LoggerFactory.getLogger(SteamDiscussionCreator::class.java)
+
     @JvmStatic
     fun main(args: Array<String>) {
         val executionConfiguration = ConfigLoader().loadConfigOrThrow<Config>("/config.yaml")
         val driver = configureDriver()
+        configureDatabase()
 
         performLogin(driver, executionConfiguration)
         createDiscussions(driver, executionConfiguration)
@@ -48,6 +52,7 @@ object SteamDiscussionCreator {
         tradingForumPage.typeTitle(discussion.title)
         tradingForumPage.typeText(discussion.text)
         tradingForumPage.createDiscussion(discussion.simulation)
+        trackInsertedPost(appID, discussion.simulation)
     }
 
     private fun configureDriver(): WebDriver {
