@@ -1,10 +1,13 @@
 package it.alesc.steam.pages
 
 import it.alesc.steam.components.DiscussionTopic
+import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.FindBy
+import org.openqa.selenium.support.ui.WebDriverWait
 import org.slf4j.LoggerFactory
+import java.time.Duration
 
 class TradingForumPage(driver: WebDriver): BasePage(driver) {
     private val logger = LoggerFactory.getLogger(TradingForumPage::class.java)
@@ -52,6 +55,8 @@ class TradingForumPage(driver: WebDriver): BasePage(driver) {
     fun createDiscussion(simulation: Boolean) {
         if (!simulation) {
             clickElement(createDiscussionButton!!)
+            WebDriverWait(driver, Duration.ofSeconds(2))
+                .until { it.findElement(By.cssSelector(".forum_topic_needs_content_check_notice.forum_newtopic_box")) }
             logger.info("Discussion created for game \"{}\"", getAppName())
         } else {
             logger.info("Simulation enabled, avoid click on \"Create discussion\"")
