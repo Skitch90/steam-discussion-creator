@@ -4,6 +4,7 @@ import com.sksamuel.hoplite.ConfigLoader
 import it.alesc.steam.config.Config
 import it.alesc.steam.config.Discussion
 import it.alesc.steam.db.DBUtils.configureDatabase
+import it.alesc.steam.db.DBUtils.postInsertedRecently
 import it.alesc.steam.db.DBUtils.trackInsertedPost
 import it.alesc.steam.pages.LoginPage
 import it.alesc.steam.pages.TradingForumPage
@@ -46,6 +47,10 @@ object SteamDiscussionCreator {
         tradingForumPage.navigate(appID)
         if (tradingForumPage.existsDiscussion { it.getAuthor() == discussion.author }) {
             logger.info("Discussion already exists for game \"{}\"", tradingForumPage.getAppName())
+            return
+        }
+        if (postInsertedRecently(appID)) {
+            logger.info("Post inserted recently for game \"{}\"", tradingForumPage.getAppName())
             return
         }
         tradingForumPage.startDiscussion()
