@@ -56,8 +56,10 @@ object SteamDiscussionCreator {
         tradingForumPage.startDiscussion()
         tradingForumPage.typeTitle(discussion.title)
         tradingForumPage.typeText(discussion.text)
-        tradingForumPage.createDiscussion(discussion.simulation)
-        trackInsertedPost(appID, discussion.simulation)
+        val created = tradingForumPage.createDiscussion(discussion.simulation)
+        if (created) {
+            trackInsertedPost(appID, discussion.simulation)
+        }
     }
 
     private fun configureDriver(): WebDriver {

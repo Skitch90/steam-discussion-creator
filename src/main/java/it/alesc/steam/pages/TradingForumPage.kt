@@ -52,10 +52,10 @@ class TradingForumPage(driver: WebDriver): BasePage(driver) {
         textArea!!.sendKeys(text)
     }
 
-    fun createDiscussion(simulation: Boolean) {
+    fun createDiscussion(simulation: Boolean): Boolean {
         if (simulation) {
             logger.info("Simulation enabled, avoid click on \"Create discussion\"")
-            return
+            return false;
         }
 
         try {
@@ -63,11 +63,13 @@ class TradingForumPage(driver: WebDriver): BasePage(driver) {
             WebDriverWait(driver, Duration.ofSeconds(2))
                 .until { it.findElement(By.cssSelector(".forum_topic_needs_content_check_notice.forum_newtopic_box")) }
             logger.info("Discussion created for game \"{}\"", getAppName())
+            return true;
         } catch (e: Exception) {
             val errorElement: WebElement? = driver.findElement(By.className("forum_newtopic_error"))
             errorElement?.let {
                 logger.error("Error creating discussion for game \"{}\": \"{}\"", getAppName(), it.text)
             } ?: throw e
+            return false;
         }
     }
 }
