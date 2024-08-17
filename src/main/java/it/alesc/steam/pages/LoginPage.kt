@@ -19,7 +19,7 @@ class LoginPage(driver: WebDriver): BasePage(driver) {
     private val signInButton: WebElement? = null
 
     fun navigate() {
-        navigateTo("https://store.steampowered.com/login/")
+        navigateTo("https://steamcommunity.com/login/home/?goto=")
         WebDriverWait(driver, Duration.ofSeconds(10))
             .until { it.findElement(By.cssSelector("input[type='password']")) }
     }
