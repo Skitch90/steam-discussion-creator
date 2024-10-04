@@ -30,8 +30,16 @@ object SteamDiscussionCreator {
 
     private fun createDiscussions(driver: WebDriver, executionConfiguration: Config) {
         val tradingForumPage = TradingForumPage(driver)
+        var createdCount = 0
         executionConfiguration.apps.forEach {
-            createDiscussionForApp(tradingForumPage, it, executionConfiguration.discussion)
+            val result = createDiscussionForApp(tradingForumPage, it, executionConfiguration.discussion)
+            if (result == CreateResult.OK) {
+                createdCount++
+            }
+            if (createdCount == 5) {
+                logger.info("Created 5 discussions, quitting. Retry after a minute")
+                return
+            }
         }
     }
 
@@ -43,15 +51,15 @@ object SteamDiscussionCreator {
         loginPage.login()
     }
 
-    private fun createDiscussionForApp(tradingForumPage: TradingForumPage, appID: String, discussion: Discussion) {
+    private fun createDiscussionForApp(tradingForumPage: TradingForumPage, appID: String, discussion: Discussion): CreateResult {
         tradingForumPage.navigate(appID)
         if (tradingForumPage.existsDiscussion { it.getAuthor() == discussion.author }) {
             logger.info("Discussion already exists for game \"{}\"", tradingForumPage.getAppName())
-            return
+            return CreateResult.SKIP
         }
         if (postInsertedRecently(appID)) {
             logger.info("Post inserted recently for game \"{}\"", tradingForumPage.getAppName())
-            return
+            return CreateResult.SKIP
         }
         tradingForumPage.startDiscussion()
         tradingForumPage.typeTitle(discussion.title)
@@ -59,7 +67,9 @@ object SteamDiscussionCreator {
         val created = tradingForumPage.createDiscussion(discussion.simulation)
         if (created) {
             trackInsertedPost(appID, discussion.simulation)
+            return CreateResult.OK
         }
+        return CreateResult.KO
     }
 
     private fun configureDriver(): WebDriver {
@@ -68,5 +78,9 @@ object SteamDiscussionCreator {
             .timeouts()
             .implicitlyWait(Duration.ofSeconds(5))
         return driver
+    }
+
+    enum class CreateResult {
+        OK, KO, SKIP
     }
 }
