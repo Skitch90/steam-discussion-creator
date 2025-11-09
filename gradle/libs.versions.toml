@@ -1,5 +1,5 @@
 [versions]
-org-seleniumhq-selenium-selenium-java = "4.16.1"
+org-seleniumhq-selenium-selenium-java = "4.38.0"
 ch-qos-logback-logback-classic  = "1.5.6"
 com-sksamuel-hoplite = "1.4.16"
 org-jetbrains-exposed = "0.46.0"
