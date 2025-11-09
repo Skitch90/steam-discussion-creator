@@ -1,3 +1,6 @@
+db:
+  url: jdbc:sqlite:/path/to/db.sqlite
+
 credentials:
   username: "il_tuo_username"
   password: "la_tua_password"

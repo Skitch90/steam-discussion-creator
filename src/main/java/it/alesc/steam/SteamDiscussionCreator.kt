@@ -20,7 +20,7 @@ object SteamDiscussionCreator {
     fun main(args: Array<String>) {
         val executionConfiguration = ConfigLoader().loadConfigOrThrow<Config>("/config.yaml")
         val driver = configureDriver()
-        configureDatabase()
+        configureDatabase(executionConfiguration.db)
 
         performLogin(driver, executionConfiguration)
         createDiscussions(driver, executionConfiguration)

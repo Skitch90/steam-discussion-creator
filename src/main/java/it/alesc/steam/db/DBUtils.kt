@@ -1,5 +1,6 @@
 package it.alesc.steam.db
 
+import it.alesc.steam.config.DB
 import kotlinx.datetime.Clock
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.transactions.TransactionManager
@@ -8,8 +9,8 @@ import java.sql.Connection
 import kotlin.time.Duration.Companion.hours
 
 object DBUtils {
-    fun configureDatabase() {
-        Database.connect("jdbc:sqlite:/data/steam.db", "org.sqlite.JDBC")
+    fun configureDatabase(db: DB) {
+        Database.connect(db.url, "org.sqlite.JDBC")
         TransactionManager.manager.defaultIsolationLevel = Connection.TRANSACTION_SERIALIZABLE
         transaction {
             SchemaUtils.create(Posts)
