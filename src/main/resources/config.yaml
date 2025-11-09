@@ -1,0 +1,15 @@
+credentials:
+  username: "il_tuo_username"
+  password: "la_tua_password"
+
+discussion:
+  author: "Nome Autore"
+  title: "Titolo della discussione"
+  text: |
+    Testo della discussione su più righe se necessario.
+    Puoi andare a capo e usare il blocco letterale.
+
+apps:
+  - "570" # App1
+  - "730" # App2
+  - "123456" # App3
