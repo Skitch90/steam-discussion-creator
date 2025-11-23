@@ -6,6 +6,7 @@ import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.transactions.TransactionManager
 import org.jetbrains.exposed.sql.transactions.transaction
 import java.sql.Connection
+import kotlin.time.Duration.Companion.days
 import kotlin.time.Duration.Companion.hours
 
 object DBUtils {
@@ -15,6 +16,22 @@ object DBUtils {
         transaction {
             SchemaUtils.create(Posts)
         }
+    }
+
+    fun retrieveAppsToUpdate(appIdList: List<Int>): List<String> {
+        return transaction {
+            Posts.selectAll()
+                .where { Posts.appId inList appIdList }
+                .andWhere { Posts.lastPostInsertDate less Clock.System.now().minus(14.days) }
+                .map { it[Posts.appId].toString() }
+        }
+    }
+
+    fun retrieveAppsToInsert(appIdList: List<Int>): List<String> {
+        val appIds = transaction {
+            Posts.selectAll().map { it[Posts.appId] }
+        }
+        return appIdList.subtract(appIds.toSet()).map { it.toString() }
     }
 
     fun postInsertedRecently(appID: String): Boolean {

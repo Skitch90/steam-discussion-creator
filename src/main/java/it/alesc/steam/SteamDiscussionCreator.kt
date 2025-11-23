@@ -5,6 +5,8 @@ import it.alesc.steam.config.Config
 import it.alesc.steam.config.Discussion
 import it.alesc.steam.db.DBUtils.configureDatabase
 import it.alesc.steam.db.DBUtils.postInsertedRecently
+import it.alesc.steam.db.DBUtils.retrieveAppsToInsert
+import it.alesc.steam.db.DBUtils.retrieveAppsToUpdate
 import it.alesc.steam.db.DBUtils.trackInsertedPost
 import it.alesc.steam.pages.LoginPage
 import it.alesc.steam.pages.TradingForumPage
@@ -19,24 +21,32 @@ object SteamDiscussionCreator {
     @JvmStatic
     fun main(args: Array<String>) {
         val executionConfiguration = ConfigLoader().loadConfigOrThrow<Config>("/config.yaml")
-        val driver = configureDriver()
         configureDatabase(executionConfiguration.db)
+        val appsToUpdate = retrieveAppsToUpdate(executionConfiguration.apps.map { it.toInt() })
+        val appsToInsert = retrieveAppsToInsert(executionConfiguration.apps.map { it.toInt() })
+        if (appsToUpdate.isEmpty() && appsToInsert.isEmpty()) {
+            logger.info("No apps to update")
+            return
+        }
 
+        val driver = configureDriver()
+        logger.info("{} Apps to update", appsToUpdate.size + appsToInsert.size)
         performLogin(driver, executionConfiguration)
-        createDiscussions(driver, executionConfiguration)
+        createDiscussions(driver, appsToUpdate.union(appsToInsert).toList(), executionConfiguration.discussion)
 
         driver.quit()
     }
 
-    private fun createDiscussions(driver: WebDriver, executionConfiguration: Config) {
+    private fun createDiscussions(driver: WebDriver, appsToUpdate: List<String>, discussion: Discussion) {
         val tradingForumPage = TradingForumPage(driver)
         var createdCount = 0
-        executionConfiguration.apps.forEach {
-            val result = createDiscussionForApp(tradingForumPage, it, executionConfiguration.discussion)
+
+        appsToUpdate.forEach {
+            val result = createDiscussionForApp(tradingForumPage, it, discussion)
             if (result == CreateResult.OK) {
                 createdCount++
             }
-            if (createdCount == 5) {
+            if (createdCount == 5 && appsToUpdate.size > 5) {
                 logger.info("Created 5 discussions, quitting. Retry after a minute")
                 return
             }
