@@ -20,30 +20,34 @@ apps:
   - 314830 # Blackguards 2
   - 1028310 # Book of Hours
   - 855740 # Bum Simulator
-  - 204360 # Castle Crashers
+#  - 204360 # Castle Crashers
 #  - 255710 # Cities: Skylines
   - 718670 # Cultist Simulator
   - 262060 # Darkest Dungeon®
   - 700600 # Evil Genius 2
   - 304390 # For Honor
   - 323190 # Frostpunk
+  - 878580 # GARAGE: Bad Trip
   - 222880 # Insurgency
   - 224900 # Iron Sky Invasion
+  - 1302240 # Labyrinthine
   - 485510 # Nioh: Complete Edition
   - 233450 # Prison Architect
 #  - 394310 # Punch Club
   - 340830 # Razenroth
+  - 429490 # Resilience Wave Survival
   - 35450 # Rising Storm/Red Orchestra 2 Multiplayer
   - 300550 # Shadowrun: Dragonfall - Director's Cut
   - 289070 # Sid Meier's Civilization VI
   - 204880 # Sins of a Solar Empire: Rebellion
+  - 433340 # Slime Rancher
   - 485610 # Soccer Online: Ball 3D
   - 439190 # Stories: The Path of Destinies
   - 310950 # Street Fighter V
   - 264710 # Subnautica
   - 848450 # Subnautica: Below Zero
   - 286160 # Tabletop Simulator
-  - 343860 # Tacoma
+#  - 343860 # Tacoma
   - 1086860 # TOUHOU SKY ARENA MATSURI CLIMAX
   - 550370 # The Last Sin
   - 1515210 # The Past Within
@@ -51,4 +55,5 @@ apps:
   - 425580 # The Room Two
   - 456750 # The Room Three
   - 1361320 # The Room 4: Old Sins
+#  - 236390 # War Thunder
 
