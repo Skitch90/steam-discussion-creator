@@ -15,7 +15,7 @@ discussion:
 apps:
   - 467090 # A Game of Changes
   - 266840 # Age of Mythology: Extended Edition
-  - 2379780 # Balatro
+#  - 2379780 # Balatro
   - 107100 # Bastion
   - 284160 # BeamNG.drive
   - 960990 # Beyond: Two Souls
@@ -24,6 +24,7 @@ apps:
   - 855740 # Bum Simulator
 #  - 204360 # Castle Crashers
 #  - 255710 # Cities: Skylines
+  - 203770 # Crusader Kings II
   - 718670 # Cultist Simulator
   - 262060 # Darkest Dungeon®
   - 1940340 # Darkest Dungeon® II
@@ -36,7 +37,7 @@ apps:
   - 1302240 # Labyrinthine
   - 1282730 # Loop Hero
   - 1102190 # Monster Train
-  - 485510 # Nioh: Complete Edition
+#  - 485510 # Nioh: Complete Edition
   - 233450 # Prison Architect
 #  - 394310 # Punch Club
   - 340830 # Razenroth
@@ -54,7 +55,7 @@ apps:
   - 848450 # Subnautica: Below Zero
   - 286160 # Tabletop Simulator
 #  - 343860 # Tacoma
-  - 1086860 # TOUHOU SKY ARENA MATSURI CLIMAX
+  - 413510 # The Extinction
   - 550370 # The Last Sin
 #  - 1515210 # The Past Within
   - 288160 # The Room
@@ -62,5 +63,7 @@ apps:
   - 456750 # The Room Three
   - 1361320 # The Room 4: Old Sins
   - 389270 # Through Abandoned: The Underground City
+  - 1086860 # TOUHOU SKY ARENA MATSURI CLIMAX
+  - 42960 # Victoria II
 #  - 236390 # War Thunder (TRADE FORUM DOESN'T EXISTS)'
 
