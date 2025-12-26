@@ -17,7 +17,7 @@ apps:
   - 467090 # A Game of Changes
   - 266840 # Age of Mythology: Extended Edition
 #  - 2379780 # Balatro
-  - 107100 # Bastion
+#  - 107100 # Bastion
   - 284160 # BeamNG.drive
   - 960990 # Beyond: Two Souls
   - 314830 # Blackguards 2
@@ -25,18 +25,18 @@ apps:
   - 855740 # Bum Simulator
 #  - 204360 # Castle Crashers
 #  - 255710 # Cities: Skylines
-  - 203770 # Crusader Kings II
+#  - 203770 # Crusader Kings II
   - 718670 # Cultist Simulator
   - 262060 # Darkest Dungeon®
   - 1940340 # Darkest Dungeon® II
-  - 221100 # DayZ
+#  - 221100 # DayZ
   - 570 # Dota 2
   - 700600 # Evil Genius 2
   - 304390 # For Honor
   - 323190 # Frostpunk
   - 878580 # GARAGE: Bad Trip
 #  - 222880 # Insurgency
-  - 224900 # Iron Sky Invasion
+#  - 224900 # Iron Sky Invasion
   - 1302240 # Labyrinthine
   - 1282730 # Loop Hero
   - 1102190 # Monster Train
@@ -44,11 +44,12 @@ apps:
   - 233450 # Prison Architect
 #  - 394310 # Punch Club
   - 340830 # Razenroth
-  - 222480 # Resident Evil Revelations
+#  - 222480 # Resident Evil Revelations
   - 429490 # Resilience Wave Survival
-  - 35450 # Rising Storm/Red Orchestra 2 Multiplayer
+#  - 35450 # Rising Storm/Red Orchestra 2 Multiplayer
   - 300550 # Shadowrun: Dragonfall - Director's Cut
-  - 289070 # Sid Meier's Civilization VI
+  - 8930 # Sid Meier's Civilization V
+#  - 289070 # Sid Meier's Civilization VI
   - 204880 # Sins of a Solar Empire: Rebellion
 #  - 433340 # Slime Rancher
   - 485610 # Soccer Online: Ball 3D
@@ -68,6 +69,5 @@ apps:
   - 1361320 # The Room 4: Old Sins
   - 389270 # Through Abandoned: The Underground City
   - 1086860 # TOUHOU SKY ARENA MATSURI CLIMAX
-  - 42960 # Victoria II
+#  - 42960 # Victoria II
 #  - 236390 # War Thunder (TRADE FORUM DOESN'T EXISTS)'
-
