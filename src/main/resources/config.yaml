@@ -13,7 +13,7 @@ discussion:
     Puoi andare a capo e usare il blocco letterale.
 
 apps:
-  - 282800 # 100% Orange Juice
+#  - 282800 # 100% Orange Juice
   - 467090 # A Game of Changes
   - 266840 # Age of Mythology: Extended Edition
 #  - 2379780 # Balatro
@@ -30,7 +30,7 @@ apps:
   - 262060 # Darkest Dungeon®
   - 1940340 # Darkest Dungeon® II
 #  - 221100 # DayZ
-  - 570 # Dota 2
+#  - 570 # Dota 2
   - 700600 # Evil Genius 2
   - 304390 # For Honor
   - 323190 # Frostpunk
@@ -38,7 +38,8 @@ apps:
 #  - 222880 # Insurgency
 #  - 224900 # Iron Sky Invasion
   - 1302240 # Labyrinthine
-  - 1282730 # Loop Hero
+#  - 1282730 # Loop Hero
+  - 743450 # Monster Prom
   - 1102190 # Monster Train
 #  - 485510 # Nioh: Complete Edition
   - 233450 # Prison Architect
@@ -48,7 +49,7 @@ apps:
   - 429490 # Resilience Wave Survival
 #  - 35450 # Rising Storm/Red Orchestra 2 Multiplayer
   - 300550 # Shadowrun: Dragonfall - Director's Cut
-  - 8930 # Sid Meier's Civilization V
+#  - 8930 # Sid Meier's Civilization V
 #  - 289070 # Sid Meier's Civilization VI
   - 204880 # Sins of a Solar Empire: Rebellion
 #  - 433340 # Slime Rancher
@@ -60,7 +61,7 @@ apps:
   - 848450 # Subnautica: Below Zero
   - 286160 # Tabletop Simulator
 #  - 343860 # Tacoma
-  - 413510 # The Extinction
+#  - 413510 # The Extinction
   - 550370 # The Last Sin
 #  - 1515210 # The Past Within
   - 288160 # The Room
@@ -69,5 +70,6 @@ apps:
   - 1361320 # The Room 4: Old Sins
   - 389270 # Through Abandoned: The Underground City
   - 1086860 # TOUHOU SKY ARENA MATSURI CLIMAX
+  - 585420 # Trailmakers
 #  - 42960 # Victoria II
 #  - 236390 # War Thunder (TRADE FORUM DOESN'T EXISTS)'
