@@ -71,6 +71,11 @@ object SteamDiscussionCreator {
             logger.info("Post inserted recently for game \"{}\"", tradingForumPage.getAppName())
             return CreateResult.SKIP
         }
+        if (!tradingForumPage.canStartDiscussion()) {
+            logger.warn("Start discussion button not present. Skip game \"{}\"", tradingForumPage.getAppName())
+            return CreateResult.SKIP
+        }
+
         tradingForumPage.startDiscussion()
         tradingForumPage.typeTitle(discussion.title)
         tradingForumPage.typeText(discussion.text)

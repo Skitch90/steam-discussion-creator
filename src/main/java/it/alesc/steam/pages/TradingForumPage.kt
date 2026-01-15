@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait
 import org.slf4j.LoggerFactory
 import java.time.Duration
 
+private const val START_DISCUSSION_BUTTON_CSS_SELECTOR = ".btn_medium.responsive_OnClickDismissMenu"
+
 class TradingForumPage(driver: WebDriver): BasePage(driver) {
     private val logger = LoggerFactory.getLogger(TradingForumPage::class.java)
 
@@ -16,7 +18,7 @@ class TradingForumPage(driver: WebDriver): BasePage(driver) {
     private val appName: WebElement? = null
     @FindBy(css = ".forum_topic:not(.locked)")
     private val topics: List<WebElement>? = null
-    @FindBy(css = ".btn_medium.responsive_OnClickDismissMenu")
+    @FindBy(css = START_DISCUSSION_BUTTON_CSS_SELECTOR)
     private val startDiscussionButton: WebElement? = null
     @FindBy(css = "input[name='topic']")
     private val titleInputText: WebElement? = null
@@ -39,6 +41,8 @@ class TradingForumPage(driver: WebDriver): BasePage(driver) {
     private fun getDiscussions(): List<DiscussionTopic> {
         return topics?.map { DiscussionTopic(it) } ?: listOf()
     }
+
+    fun canStartDiscussion() = driver.findElements(By.cssSelector(START_DISCUSSION_BUTTON_CSS_SELECTOR)).isNotEmpty()
 
     fun startDiscussion() {
         clickElement(startDiscussionButton!!)
