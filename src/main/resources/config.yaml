@@ -21,6 +21,7 @@ apps:
 #  - 284160 # BeamNG.drive
   - 960990 # Beyond: Two Souls
   - 314830 # Blackguards 2
+  - 424760 # Bladestar
   - 1028310 # Book of Hours
   - 855740 # Bum Simulator
 #  - 204360 # Castle Crashers
@@ -57,7 +58,7 @@ apps:
   - 204880 # Sins of a Solar Empire: Rebellion
 #  - 433340 # Slime Rancher
   - 485610 # Soccer Online: Ball 3D
-  - 867210 # Songs of Conquest
+#  - 867210 # Songs of Conquest
   - 439190 # Stories: The Path of Destinies
   - 310950 # Street Fighter V
   - 264710 # Subnautica
@@ -76,3 +77,4 @@ apps:
   - 585420 # Trailmakers
 #  - 42960 # Victoria II
 #  - 236390 # War Thunder (TRADE FORUM DOESN'T EXISTS)
+  - 636960 # Wo Yao Da
