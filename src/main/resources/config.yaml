@@ -24,7 +24,7 @@ apps:
   - 424760 # Bladestar
   - 1028310 # Book of Hours
   - 2835570 # Buckshot Roulette
-  - 855740 # Bum Simulator
+#  - 855740 # Bum Simulator
 #  - 204360 # Castle Crashers
 #  - 255710 # Cities: Skylines
 #  - 203770 # Crusader Kings II
@@ -34,7 +34,7 @@ apps:
 #  - 221100 # DayZ
 #  - 570 # Dota 2
   - 700600 # Evil Genius 2
-  - 304390 # For Honor
+#  - 304390 # For Honor
   - 323190 # Frostpunk
   - 878580 # GARAGE: Bad Trip
 #  - 222880 # Insurgency
@@ -64,7 +64,7 @@ apps:
   - 310950 # Street Fighter V
   - 264710 # Subnautica
   - 848450 # Subnautica: Below Zero
-  - 286160 # Tabletop Simulator
+#  - 286160 # Tabletop Simulator
 #  - 343860 # Tacoma
 #  - 413510 # The Extinction
   - 550370 # The Last Sin
@@ -75,6 +75,7 @@ apps:
   - 1361320 # The Room 4: Old Sins
   - 389270 # Through Abandoned: The Underground City
   - 1086860 # TOUHOU SKY ARENA MATSURI CLIMAX
+  - 214360 # Tower Wars
   - 585420 # Trailmakers
 #  - 42960 # Victoria II
 #  - 236390 # War Thunder (TRADE FORUM DOESN'T EXISTS)
