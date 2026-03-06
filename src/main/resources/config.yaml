@@ -23,7 +23,7 @@ apps:
   - 314830 # Blackguards 2
   - 424760 # Bladestar
   - 1028310 # Book of Hours
-  - 2835570 # Buckshot Roulette
+#  - 2835570 # Buckshot Roulette
 #  - 855740 # Bum Simulator
 #  - 204360 # Castle Crashers
 #  - 255710 # Cities: Skylines
@@ -37,9 +37,10 @@ apps:
 #  - 304390 # For Honor
   - 323190 # Frostpunk
   - 878580 # GARAGE: Bad Trip
+  - 435400 # Hidden Folks
 #  - 222880 # Insurgency
 #  - 224900 # Iron Sky Invasion
-  - 1302240 # Labyrinthine
+#  - 1302240 # Labyrinthine
   - 860510 # Little Nightmares II
 #  - 1282730 # Loop Hero
   - 743450 # Monster Prom
