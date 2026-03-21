@@ -41,7 +41,7 @@ apps:
 #  - 222880 # Insurgency
 #  - 224900 # Iron Sky Invasion
 #  - 1302240 # Labyrinthine
-  - 860510 # Little Nightmares II
+#  - 860510 # Little Nightmares II
 #  - 1282730 # Loop Hero
   - 743450 # Monster Prom
   - 1102190 # Monster Train
@@ -62,6 +62,7 @@ apps:
 #  - 433340 # Slime Rancher
   - 485610 # Soccer Online: Ball 3D
 #  - 867210 # Songs of Conquest
+  - 1213700 # Spirit of the North
 #  - 439190 # Stories: The Path of Destinies
   - 310950 # Street Fighter V
   - 264710 # Subnautica
