@@ -46,6 +46,7 @@ apps:
   - 743450 # Monster Prom
   - 1102190 # Monster Train
 #  - 485510 # Nioh: Complete Edition
+  - 728880 # Overcooked! 2
 #  - 3527290 # PEAK
   - 233450 # Prison Architect
 #  - 394310 # Punch Club
@@ -69,7 +70,7 @@ apps:
   - 848450 # Subnautica: Below Zero
 #  - 286160 # Tabletop Simulator
 #  - 343860 # Tacoma
-  - 105600 # Terraria
+#  - 105600 # Terraria
 #  - 413510 # The Extinction
   - 550370 # The Last Sin
 #  - 1515210 # The Past Within
