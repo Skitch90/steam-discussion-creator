@@ -64,7 +64,7 @@ apps:
 #  - 433340 # Slime Rancher
   - 485610 # Soccer Online: Ball 3D
 #  - 867210 # Songs of Conquest
-  - 1213700 # Spirit of the North
+#  - 1213700 # Spirit of the North
 #  - 439190 # Stories: The Path of Destinies
   - 310950 # Street Fighter V
   - 264710 # Subnautica
@@ -72,6 +72,7 @@ apps:
 #  - 286160 # Tabletop Simulator
 #  - 343860 # Tacoma
 #  - 105600 # Terraria
+  - 298630 # The Escapists
 #  - 413510 # The Extinction
   - 550370 # The Last Sin
 #  - 1515210 # The Past Within
