@@ -26,6 +26,7 @@ apps:
 #  - 2835570 # Buckshot Roulette
 #  - 855740 # Bum Simulator
 #  - 204360 # Castle Crashers
+  - 2755330 # Chushpan Simulator
 #  - 255710 # Cities: Skylines
 #  - 203770 # Crusader Kings II
   - 718670 # Cultist Simulator
@@ -56,6 +57,7 @@ apps:
 #  - 222480 # Resident Evil Revelations
   - 429490 # Resilience Wave Survival
 #  - 35450 # Rising Storm/Red Orchestra 2 Multiplayer
+  - 55230 # Saints Row: The Third
 #  - 1172620 # Sea of Thieves
   - 300550 # Shadowrun: Dragonfall - Director's Cut
 #  - 8930 # Sid Meier's Civilization V
@@ -72,7 +74,7 @@ apps:
 #  - 286160 # Tabletop Simulator
 #  - 343860 # Tacoma
 #  - 105600 # Terraria
-  - 298630 # The Escapists
+#  - 298630 # The Escapists
 #  - 413510 # The Extinction
   - 550370 # The Last Sin
 #  - 1515210 # The Past Within
