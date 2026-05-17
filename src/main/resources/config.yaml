@@ -36,7 +36,8 @@ apps:
   - 91310 # Dead Island
 #  - 570 # Dota 2
   - 700600 # Evil Genius 2
-#  - 304390 # For Honor
+  - 304390 # For Honor
+  - 4000 # Garry's Mod
   - 323190 # Frostpunk
   - 878580 # GARAGE: Bad Trip
   - 435400 # Hidden Folks
