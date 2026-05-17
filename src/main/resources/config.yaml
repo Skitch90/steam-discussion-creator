@@ -37,9 +37,10 @@ apps:
 #  - 570 # Dota 2
   - 700600 # Evil Genius 2
   - 304390 # For Honor
-  - 4000 # Garry's Mod
+#  - 4000 # Garry's Mod
   - 323190 # Frostpunk
   - 878580 # GARAGE: Bad Trip
+  - 400250 # Heaven Island - VR MMO
   - 435400 # Hidden Folks
 #  - 222880 # Insurgency
 #  - 224900 # Iron Sky Invasion
@@ -51,6 +52,7 @@ apps:
 #  - 485510 # Nioh: Complete Edition
   - 728880 # Overcooked! 2
 #  - 3527290 # PEAK
+  - 284950 # Pixel Puzzles: Japan
   - 233450 # Prison Architect
 #  - 394310 # Punch Club
 #  - 648800 # Raft (TRADE FORUM DOESN'T EXISTS)
@@ -77,6 +79,7 @@ apps:
 #  - 105600 # Terraria
 #  - 298630 # The Escapists
 #  - 413510 # The Extinction
+  - 403120 # THE GAME OF LIFE
   - 550370 # The Last Sin
 #  - 1515210 # The Past Within
   - 288160 # The Room
