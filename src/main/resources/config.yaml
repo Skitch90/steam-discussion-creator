@@ -26,7 +26,7 @@ apps:
 #  - 2835570 # Buckshot Roulette
 #  - 855740 # Bum Simulator
 #  - 204360 # Castle Crashers
-  - 2755330 # Chushpan Simulator
+#  - 2755330 # Chushpan Simulator
 #  - 255710 # Cities: Skylines
 #  - 203770 # Crusader Kings II
   - 718670 # Cultist Simulator
@@ -35,6 +35,7 @@ apps:
 #  - 221100 # DayZ
   - 91310 # Dead Island
 #  - 570 # Dota 2
+  - 1120810 # Eastern Exorcist
   - 700600 # Evil Genius 2
   - 304390 # For Honor
 #  - 4000 # Garry's Mod
@@ -45,7 +46,7 @@ apps:
 #  - 222880 # Insurgency
 #  - 224900 # Iron Sky Invasion
 #  - 1302240 # Labyrinthine
-  - 550 # Left 4 Dead 2
+#  - 550 # Left 4 Dead 2
 #  - 860510 # Little Nightmares II
 #  - 1282730 # Loop Hero
   - 743450 # Monster Prom
