@@ -10,7 +10,7 @@ abstract class BasePage(protected val driver: WebDriver) {
     }
 
     fun navigateTo(url: String?) {
-        driver.navigate().to(url)
+        driver.navigate().to(url!!)
     }
 
     fun clickElement(element: WebElement) {
