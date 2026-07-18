@@ -38,11 +38,11 @@ apps:
 #  - 570 # Dota 2
   - 1120810 # Eastern Exorcist
   - 700600 # Evil Genius 2
-  - 304390 # For Honor
+#  - 304390 # For Honor
 #  - 4000 # Garry's Mod
   - 323190 # Frostpunk
   - 878580 # GARAGE: Bad Trip
-  - 400250 # Heaven Island - VR MMO
+#  - 400250 # Heaven Island - VR MMO
   - 435400 # Hidden Folks
 #  - 222880 # Insurgency
 #  - 224900 # Iron Sky Invasion
@@ -54,7 +54,7 @@ apps:
   - 743450 # Monster Prom
   - 1102190 # Monster Train
 #  - 485510 # Nioh: Complete Edition
-  - 275850 # No Man's Sky
+#  - 275850 # No Man's Sky
   - 728880 # Overcooked! 2
 #  - 3527290 # PEAK
   - 284950 # Pixel Puzzles: Japan
@@ -91,7 +91,7 @@ apps:
   - 425580 # The Room Two
   - 456750 # The Room Three
   - 1361320 # The Room 4: Old Sins
-  - 389270 # Through Abandoned: The Underground City
+#  - 389270 # Through Abandoned: The Underground City
   - 1086860 # TOUHOU SKY ARENA MATSURI CLIMAX
   - 214360 # Tower Wars
   - 585420 # Trailmakers
