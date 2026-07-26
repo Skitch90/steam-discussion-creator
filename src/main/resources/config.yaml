@@ -28,7 +28,7 @@ apps:
 #  - 204360 # Castle Crashers
 #  - 2755330 # Chushpan Simulator
 #  - 255710 # Cities: Skylines
-  - 949230 # Cities: Skylines II
+#  - 949230 # Cities: Skylines II
 #  - 203770 # Crusader Kings II
   - 718670 # Cultist Simulator
   - 262060 # Darkest Dungeon®
@@ -44,6 +44,7 @@ apps:
   - 878580 # GARAGE: Bad Trip
 #  - 400250 # Heaven Island - VR MMO
   - 435400 # Hidden Folks
+  - 367520 # Hollow Knight
 #  - 222880 # Insurgency
 #  - 224900 # Iron Sky Invasion
 #  - 1302240 # Labyrinthine
