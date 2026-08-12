@@ -22,7 +22,7 @@ apps:
 #  - 284160 # BeamNG.drive
   - 960990 # Beyond: Two Souls
   - 314830 # Blackguards 2
-  - 424760 # Bladestar
+#  - 424760 # Bladestar
   - 1028310 # Book of Hours
 #  - 2835570 # Buckshot Roulette
 #  - 855740 # Bum Simulator
@@ -38,7 +38,7 @@ apps:
   - 91310 # Dead Island
 #  - 570 # Dota 2
   - 1120810 # Eastern Exorcist
-  - 700600 # Evil Genius 2
+#  - 700600 # Evil Genius 2
 #  - 304390 # For Honor
 #  - 4000 # Garry's Mod
   - 323190 # Frostpunk
@@ -100,4 +100,5 @@ apps:
   - 585420 # Trailmakers
 #  - 42960 # Victoria II
 #  - 236390 # War Thunder (TRADE FORUM DOESN'T EXISTS)
-  - 636960 # Wo Yao Da
+#  - 636960 # Wo Yao Da
+  - 1817000 # Zodiacats
