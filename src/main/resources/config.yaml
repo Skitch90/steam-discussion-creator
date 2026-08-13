@@ -52,7 +52,7 @@ apps:
 #  - 550 # Left 4 Dead 2
 #  - 860510 # Little Nightmares II
 #  - 1282730 # Loop Hero
-  - 1328670 # Mass Effect™ Legendary Edition
+#  - 1328670 # Mass Effect™ Legendary Edition
   - 286690 # Metro 2033 Redux
   - 743450 # Monster Prom
   - 1102190 # Monster Train
@@ -84,6 +84,7 @@ apps:
   - 848450 # Subnautica: Below Zero
 #  - 286160 # Tabletop Simulator
 #  - 343860 # Tacoma
+  - 244030 # Take On Mars
 #  - 105600 # Terraria
 #  - 298630 # The Escapists
 #  - 413510 # The Extinction
